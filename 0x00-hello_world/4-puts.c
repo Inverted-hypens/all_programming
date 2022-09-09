@@ -2,6 +2,10 @@
 
 int main(void) 
 { 
- printf("Programming is like building a multilingual puzzle\n");
- return (0); 
+ char string[70] = "\"Programming is like building a multilingual puzzle\"";
+ 
+ puts(string);
+  
+ puts("\"Programming is like building a multilingual puzzle\""); 
+ return (0); 
 }
