@@ -1,11 +1,9 @@
-#include <stdio.h>                                                         
-
-                                                                           
+#include <stdio.h>
 
 /**
  * main - prints possible combinatiion of two digits,
  * seperated by , and space
- * Returen: Always 0 (Success)
+ * Return: Always 0 (Success)
  */
 int main(void)
 {
@@ -22,7 +20,7 @@ int main(void)
 					putchar(a);
 					putchar(b);
 					putchar(c);
-					if (a != 44 || b != 56)
+					if (a != 55 || b != 56)
 					{
 						putchar(',');
 						putchar(' ');
