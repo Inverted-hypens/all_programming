@@ -1,8 +1,8 @@
 #include <stdio.h>
 
 /**
- * main function prints the letters of the alphabet in lowercase, and then uppercase.
- * this is followed by a new line
+ * main - prints the letters of the alphabet in lowercase, and then uppercase.
+ * followed by a new line
  * Return: Always 0 (Success)
  */
 int main(void)
@@ -13,6 +13,6 @@ int main(void)
 		putchar(ch);
 	for (ch = 'A'; ch <= 'Z'; ch++)
 		putchar(ch);
-	purchar('n\');
+	putchar('n\');
 	return (0);
 }
