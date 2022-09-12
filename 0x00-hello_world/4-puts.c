@@ -1,9 +1,12 @@
-#include <stdio.h> 
+#include <stdio.h>
 
-int main(void) 
-{ 
-char string[70] = "\"Programming is like building a multilingual puzzle\"";
-puts(string);
-puts("\"Programming is like building a multilingual puzzle\""); 
-return(0); 
+/**
+ * main - prints "programming is like building a multilingual puzzle",
+ * followed by new line
+ * Return: Always 0 (Success)
+ */
+int main(void)
+{
+	puts("\"Programming is like building a multilingual puzzle\"\n");
+	return(0);
 }
