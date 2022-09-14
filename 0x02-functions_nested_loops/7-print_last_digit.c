@@ -5,7 +5,7 @@
  * @n: the int to be operated on
  * Return: the last digit of the int
  */
-int print_last digit(int n)
+int print_last_digit(int n)
 {
 	if (n >= 0 && n <= 9)
 		return (n);
