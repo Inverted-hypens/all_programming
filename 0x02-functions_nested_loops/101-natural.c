@@ -4,7 +4,7 @@
  * main - the main code block
  * Return: 0
  */
-void main(void)
+int main(void)
 {
 	int n = 0;
 	int sum = 0;
@@ -17,5 +17,6 @@ void main(void)
 		}
 		n++;
 	}
-	printf("%lu\n", sum);
+	printf("%i\n", sum);
+	return (0);
 }
