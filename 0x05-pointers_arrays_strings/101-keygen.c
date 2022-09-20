@@ -8,7 +8,7 @@
  */
 int main(void)
 {
-	int pass, int sum, int n;
+	int pass, int sum;
 
 	srand(time(NULL));
 	sum = 0;
@@ -16,11 +16,10 @@ int main(void)
 	while (sum <= 2645)
 	{
 		pass = (rand() % 128);
-		sum += (pass + '0');
-		printf("%c", (pass + '0'));
+		sum += pass;
+		printf("%c", pass);
 	}
-	n = 2772 - sum
-	printf("%c", n + '0');
+	printf("%c", 2772 - sum);
 
 	return (0);
 }
