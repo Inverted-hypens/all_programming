@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * _strcat - concatenates n bytes from src string to dest string
+ * _strncat - concatenates n bytes from src string to dest string
  * src does not need to be null terminated if it contains n bytes or more
  * @dest: pointer to destination string (to append to src)
  * @src: pointer to source string (to which dest will be appended to)
@@ -20,7 +20,8 @@ char *_strncat(char *dest, char *src, int n)
 		ld++;
 
 	while (sc < n && src[sc] != '\0')
-	{dest[ld] = src[sc];
+	{
+		dest[ld] = src[sc];
 		sc++, ld++;
 	}
 
