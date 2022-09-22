@@ -9,7 +9,7 @@
  *
  * Return: pointer to destination string
  */
-char *_strcat(char *dest, char *src, int n)
+char *_strncat(char *dest, char *src, int n)
 {
 	int ld, sc; /*ld = length of dest and sc = counter for n bytes of src*/
 
@@ -19,7 +19,7 @@ char *_strcat(char *dest, char *src, int n)
 	while (dest[ld] != '\0')
 		ld++;
 
-	while (j < n && src[sc] != '\0')
+	while (sc < n && src[sc] != '\0')
 	{dest[ld] = src[sc];
 		sc++, ld++;
 	}
