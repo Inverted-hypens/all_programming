@@ -21,7 +21,10 @@ int _strcmp(char *s1, char *s2)
 		s1++;
 		s2++;
 	}
+<<<<<<< HEAD
 
 	cmpval = *s1 - *s2;
+=======
+>>>>>>> 96187cd512843f5358aacdadf343389c8b1956a8
 	return (cmpval);
 }
