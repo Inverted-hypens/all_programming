@@ -16,7 +16,8 @@ char *string_toupper(char *s)
 	{
 		if (s[length] >= 97 && s[length] <= 122) /*ASCII for a and z*/
 		{
-			s[length] = s[lenght] - 32; /*ASCII for A and Z is 65 and 122, i.e (97 - 32) and (122 - 32)*/
+			s[length] = s[lenght] - 32;
+			/*ASCII for A and Z is 65 and 122, i.e (97 - 32) and (122 - 32)*/
 		}
 		length++;
 	}
