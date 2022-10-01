@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <ctype.h>
+#include <stdlib.h>
 #include "main.h"
 
 /**
@@ -13,9 +14,8 @@ int main(int argc, char *argv[])
 {
 	int count, sum, c;
 
-	for(count = 1; count < argc; count++);
+	for (count = 1; count < argc; count++)
 	{
-		/*checks each digit of char. of argv[count] for non-digits*/
 		for (c = 0; argv[count][c] != '\0'; c++)
 		{
 			if (!isdigit(argv[count][c]))
@@ -26,7 +26,7 @@ int main(int argc, char *argv[])
 		}
 		sum = sum + atoi(argv[count]);
 	}
-	print("%d\n", sum);
+	printf("%d\n", sum);
 
 	return (0);
 }
