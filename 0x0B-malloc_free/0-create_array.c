@@ -12,28 +12,17 @@
 char *create_array(unsigned int size, char c)
 {
 	char *buffer;
-	unsigned int i;
+	unsigned int position;
 
 	if (size == 0)
 		return (NULL);
+	buffer = malloc(sizeof(char) * size);
 
-	/*Define values with malloc*/
-	buffer = (char *) malloc(size * sizeof(c));
-
-	if (buffer == 0)
-	{
+	if (buffer == NULL)
 		return (NULL);
-	}
-	else
-	{
-		position = 0;
-		while (i < size) /*While for array*/
-		{
-			*(buffer + i) = c;
-			i++;
-		}
 
-		return (buffer);
-	}
+	for (position = 0; position < size; position++)
+		array[position] = c;
 
+	return (buffer);
 }
